@@ -19,4 +19,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: last_commit_time
-        path: last_commit_time.txt
+        path: Automated-Tests/.github/workflows/last_commit_time.txt
