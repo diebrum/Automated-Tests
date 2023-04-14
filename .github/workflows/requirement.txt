@@ -1,9 +1,0 @@
-# Create a requirement file to install dependencies whenever GitHub Actions runs the tests.
-pip freeze > requirement.txt
-git init
-git add .
-git commit -m 'initial commit'
-# Create a remote repository in github.com and do the following.
-git remote add origin <Your Repository>
-git branch -M main
-git push -u origin main
