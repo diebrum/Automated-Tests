@@ -8,5 +8,5 @@ def fib(n: int) -> int:
 def test_fibonacci():
     assert fib(10) == 53
     
-pytest /content/tests.py -s
+pytest /tests.py -s
     
