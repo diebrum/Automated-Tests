@@ -6,4 +6,4 @@ def fib(n: int) -> int:
 def test_fibonacci():
     assert fib(10) == 53
     
-pytest    
+!pytest    
