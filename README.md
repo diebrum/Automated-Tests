@@ -12,5 +12,6 @@ requirements.txt: Contains the libraries that need to be installed when the acti
 
 .github/workflows: This is the folder where the GitHub action is stored. Inside the workflows directory, main.yml file is stored. 
 
+
 main.yml: This file is responsible for defining the action that must be executed. In this example everytime some user makes a commit to the repository, tests.py will be executed.
 
