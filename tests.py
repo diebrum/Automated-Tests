@@ -1,3 +1,4 @@
+import numpy as np
 import pytest
 
 # testing Fibonacci number function
@@ -8,5 +9,7 @@ def fib(n: int) -> int:
 def test_fibonacci():
     assert fib(10) == 53
     
-pytest /tests.py -s
+#pytest /tests.py -s
+
+np.savetxt("report.txt",1)
     
