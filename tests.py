@@ -1,5 +1,4 @@
-import numpy as np
-import pytest
+import unittest
 
 # testing Fibonacci number function
 def fib(n: int) -> int:
