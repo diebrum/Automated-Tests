@@ -1,14 +1,10 @@
-import pytest
+# testing Fibonacci number function
+def fib(n: int) -> int:
+    return n if n < 2 else fib(n-1)+fib(n-2)
 
-def add_numbers(a, b):
-    return a + b
 
-
-def test_add_numbers():
-    assert add_numbers(2, 3) == 5
-    assert add_numbers(0, 0) == 0
-    assert add_numbers(-1, 1) == 0
-    
+def test_fibonacci():
+    assert fib(10) == 54
     
     
 
