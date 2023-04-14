@@ -1,0 +1,22 @@
+name: Create txt file with last commit time
+
+on:
+  push:
+    branches: [ main ] # replace 'main' with your default branch name
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: Get last commit time
+      run: echo $(git log -1 --format=%cd) > last_commit_time.txt
+      
+    - name: Upload last commit time
+      uses: actions/upload-artifact@v2
+      with:
+        name: last_commit_time
+        path: last_commit_time.txt
