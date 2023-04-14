@@ -7,8 +7,6 @@ def fib(n: int) -> int:
 
 
 def test_fibonacci():
-    if assert fib(10) == 53:
-        print("Correto!")
-    else:
-        print("Errado!")
+    assert fib(10) == 55:
+        
     
